@@ -34,6 +34,7 @@
             this.userButton = new System.Windows.Forms.Label();
             this.loginButton = new System.Windows.Forms.Button();
             this.passShow = new System.Windows.Forms.Label();
+            this.wrongLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // passBox
@@ -54,7 +55,6 @@
             this.userBox.Name = "userBox";
             this.userBox.Size = new System.Drawing.Size(232, 42);
             this.userBox.TabIndex = 13;
-        
             // 
             // passButton
             // 
@@ -101,11 +101,22 @@
             this.passShow.Size = new System.Drawing.Size(0, 20);
             this.passShow.TabIndex = 15;
             // 
+            // wrongLabel
+            // 
+            this.wrongLabel.AutoSize = true;
+            this.wrongLabel.Font = new System.Drawing.Font("Old English Text MT", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wrongLabel.ForeColor = System.Drawing.Color.Goldenrod;
+            this.wrongLabel.Location = new System.Drawing.Point(132, 527);
+            this.wrongLabel.Name = "wrongLabel";
+            this.wrongLabel.Size = new System.Drawing.Size(0, 33);
+            this.wrongLabel.TabIndex = 16;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
+            this.Controls.Add(this.wrongLabel);
             this.Controls.Add(this.passShow);
             this.Controls.Add(this.passBox);
             this.Controls.Add(this.userBox);
@@ -127,5 +138,6 @@
         private System.Windows.Forms.Label userButton;
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.Label passShow;
+        private System.Windows.Forms.Label wrongLabel;
     }
 }

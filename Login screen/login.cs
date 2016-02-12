@@ -24,7 +24,7 @@ namespace Login_screen
         private void passBox_TextChanged_1(object sender, EventArgs e)
         {
             passBox.PasswordChar = '*';
-            passShow.Text = passBox.Text;
+           
         }
 
        
@@ -32,7 +32,7 @@ namespace Login_screen
         {
             if (Form1.user == userBox.Text && Form1.pass == passBox.Text)
             {
-
+                
 
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
@@ -42,7 +42,7 @@ namespace Login_screen
             }
             else if (Form1.user != userBox.Text || Form1.pass != passBox.Text)
             {
-                loginButton.Text = "wrong";
+                wrongLabel.Text = "Your password or username is incorect";
             }
         }
     }
